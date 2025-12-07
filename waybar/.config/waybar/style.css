@@ -1,0 +1,240 @@
+@keyframes blink-warning {
+    70% {
+        color: white;
+    }
+
+    to {
+        color: white;
+        background-color: orange;
+    }
+}
+
+@keyframes blink-critical {
+    70% {
+      color: white;
+    }
+
+    to {
+        color: white;
+        background-color: red;
+    }
+}
+*{
+  font-family: "JetBrainsMono Nerd Font";
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+  font-style: italic;
+}
+
+window#waybar {
+  background-color: alpha (black, 0.55);
+  border-radius:30px;
+  padding: 0px 10px 0px 10px;
+}
+
+#mode {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+}
+
+
+#workspaces{
+   border-radius:30px;
+   padding: 0px 13px 0px 13px;
+}
+
+#workspaces button {
+   border-radius:30px;
+   padding: 0px 13px 0px 13px;
+}
+
+#cpu,
+#pulseaudio,
+#pulseaudio#microphone,
+#window,
+#memory,
+#language,
+#tray,
+#workspaces,
+#network,
+#wireplumber,
+#battery,
+#idle_inhibitor,
+#custom-lizzy,
+#custom-power,
+#network,
+#wireplumber,
+#bluetooth,
+#backlight,
+#bluetooth,
+#wireplumber,
+#idle_inhibitor,
+#workspaces,
+#custom-lizzy,
+#battery,
+#keyboard-state,
+#custom-clock,
+#clock,
+
+#tray {
+  border-radius:30px;
+   padding: 0px 15px 0px 15px;
+}
+
+#cpu {
+  border-radius:30px;
+   padding: 0px 15px 0px 15px;
+}
+
+#memory {
+  border-radius:30px;
+   padding: 0px 15px 0px 15px;
+}
+
+
+#network {
+  border-radius:30px;
+   padding: 0px 15px 0px 15px;
+}
+
+#custom-weather{
+border-radius:30px;
+padding: 0px 15px 0px 15px;
+}
+
+
+#idle_inhibitor {
+  border-radius:30px;
+  padding: 0px 21px 0px 13px;
+}
+
+#bluetooth{
+ border-radius:30px;
+  padding: 0px 15px 0px 15px;
+}
+
+#idle_inhibitor.activated{
+; color:#e57474;
+ color: yellow;
+ background-color: alpha (purple, 0.7);
+ border-radius:30px;
+ padding: 0px 21px 0px 13px;
+}
+
+#custom-power{
+  color:white;
+  padding: 0px 15px 0px 15px;
+  border-radius:15px;
+   margin-right: 15px;
+  font-size: 19px;
+}
+
+
+#workspaces button.focused {
+  background-color: green;
+  border-radius:30px;
+  padding: 0px 13px 0px 13px;
+}
+
+#workspaces button.urgent {
+  background-color: #f00000;
+  border-radius:30px;
+  padding: 0px 21px 0px 13px;
+}
+
+#language {
+  border-radius:30px;
+  padding: 0px 21px 0px 0px;
+  font-size: 21px;
+}
+
+#custom-clock {
+  border-radius:30px;
+  background-color: green;
+  padding: 0px 20px 0px 20px;
+  font-size: 21px;
+  color: white;
+}
+
+#clock {
+  border-radius:30px;
+  padding: 0px 20px 0px 20px;
+  font-size: 19px;
+}
+
+#custom-notifications {
+  border-radius:10px;
+  padding: 0px 15px 0px 15px;
+   font-size: 19px;
+}
+
+#custom-swaync {
+  border-radius:10px;
+  padding: 0px 5px 0px 5px;
+}
+
+
+#pulseaudio {
+  border-radius:30px;
+  padding: 0px 15px 0px 15px;
+   font-size: 19px;
+}
+
+#pulseaudio#microphone {
+  border-radius:30px;
+  padding: 0px 0px 0px 0px;
+}
+
+#taskbar {
+  border-radius:30px;
+  padding: 0px 15px 0px 15px;
+}
+
+#power-profiles-daemon {
+  border-radius:10px;
+  padding: 0px 15px 0px 15px;
+}
+
+
+#keyboard-state {
+ border-radius:10px;
+ padding: 0px 15px 0px 15px;
+}
+
+#backlight {
+ border-radius:10px;
+ padding: 0px 15px 0px 15px;
+}
+
+#keyboard-state.locked {
+ color:#e57474;
+ border-radius:10px;
+ padding: 0px 15px 0px 15px;
+}
+
+#battery {
+    border-radius:10px;
+    padding: 0px 15px 0px 15px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#battery.warning {
+ color: orange;
+}
+
+#battery.critical {
+ color: red;
+}
+
+#battery.warning.discharging {
+    animation-name: blink-warning;
+    animation-duration: 3s;
+}
+
+#battery.critical.discharging {
+    animation-name: blink-critical;
+    animation-duration: 1s;
+}
