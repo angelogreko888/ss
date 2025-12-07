@@ -1,7 +1,6 @@
 someblocks 
 cd
 cd dwl-b
-cd vd/dwl-bar/
 ls
 dwl0bar
 dwl-bar
@@ -38,7 +37,6 @@ nano dwl.c
 cp Makefile bMakefile
 cp config.def.h bconfig.def.h
 cp dwl.c bdwl.c
-cd vd
 mv dwl dwl.b
 tar xzf ~/dwl-v0.7.tar.gz 
 mv dwl-v0.7/ dwl
@@ -54,7 +52,6 @@ git apply patches/ipc.patch
 patch -i patches/ipc.patch 
 waybar
 nano ~/.local/bin/startdwl 
-dbus-run-session ~/vd/dwl/dwl -s  waybar
 doas xbps-query -Rs libwayland-client
 doas xbps-query -Rs libwayland
 doas xbps-query -Rs fcft
@@ -65,7 +62,6 @@ dwl -s 'dwlb -font "monospace:size=16"'
 ./dwl -s 'dwlb -font "monospace:size=16"'
 export DISPLAY=:0.0
 pipewire
-cd vd/dwl
 dwl -s dwlb
 ./dwl -s dwlb
 dbus-run-session dwl -s waybar
@@ -126,8 +122,6 @@ nano pipewire-jack.conf
 doas nano pipewire-jack.conf 
 doas ldconfig
 git clone https://github.com/angelogreko888/dotfiles --depth 1
-cp -r dotfiles/waybar/ vd/
-ls vd
 rm -rf dwl.b dwlb
 doas xbps-install stow
 stow waybar/
