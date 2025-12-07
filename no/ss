@@ -16,11 +16,12 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export QT_QPA_PLATFORMTHEME=qt5ct
 export GDK_DPI_SCALE=1.6
 
-#export WLR_DRM_DEVICES=/dev/dri/card1
+export WLR_DRM_DEVICES=/dev/dri/card0
 export WLR_DRM_NO_ATOMIC=1
 
+DISPLAY:= :0
 
-#pgrep pipewire > /dev/null && pkill pipewire
+pgrep pipewire > /dev/null && pkill pipewire
 pipewire &
 
 
