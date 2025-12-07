@@ -23,7 +23,5 @@ export WLR_DRM_NO_ATOMIC=1
 #pgrep pipewire > /dev/null && pkill pipewire
 pipewire &
 
-exec nm-applet
-exec foot &
 
 exec sway "$@"
