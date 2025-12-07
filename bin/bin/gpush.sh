@@ -5,7 +5,7 @@
   if [ $? -eq 0 ]; then
 	~/bin/gstatus.sh
 	
-	cd ~/vd
+	cd ~/ss
 	git add . && git commit -m "commit" && git push -u origin main
 
   else

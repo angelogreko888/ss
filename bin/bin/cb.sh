@@ -24,7 +24,7 @@ case $cp in
         *) echo "enter a laptop name" && exit 0 ;;
 esac
 
-#xbps-query -l > $HOME/vd/misc/$cp.lst
+#xbps-query -l > $HOME/ss/misc/$cp.lst
 
 bh=~/.bash_history
 fh=~/.local/share/fish/fish_history
@@ -39,9 +39,9 @@ for ht in "${lst[@]}";do
 	h=fish_history
 	fi
 
-	cat $ht >> $HOME/vd/misc/$h
-	sed -i '/git remote set-url origin /d' $HOME/vd/misc/$h
-	awk -i inplace '!seen[$0]++' $HOME/vd/misc/$h
-	sed -i '/when:/d'  $HOME/vd/misc/$h
+	cat $ht >> $HOME/ss/misc/$h
+	sed -i '/git remote set-url origin /d' $HOME/ss/misc/$h
+	awk -i inplace '!seen[$0]++' $HOME/ss/misc/$h
+	sed -i '/when:/d'  $HOME/ss/misc/$h
 
 done

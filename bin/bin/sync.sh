@@ -16,13 +16,13 @@ touch "$flag"
 while (true); do
 	sleep 600
 	cd  ~/.config/FreeTube/
-	rsync history.db  ~/vd/freetube/.config/FreeTube/history.db
-	rsync playlists.db  ~/vd/freetube/.config/FreeTube/playlists.db
-	rsync profiles.db  ~/vd/freetube/.config/FreeTube/profiles.db
-	rsync search-history.db  ~/vd/freetube/.config/FreeTube/search-history.db
-	rsync settings.db  ~/vd/freetube/.config/FreeTube/settings.db
+	rsync history.db  ~/ss/freetube/.config/FreeTube/history.db
+	rsync playlists.db  ~/ss/freetube/.config/FreeTube/playlists.db
+	rsync profiles.db  ~/ss/freetube/.config/FreeTube/profiles.db
+	rsync search-history.db  ~/ss/freetube/.config/FreeTube/search-history.db
+	rsync settings.db  ~/ss/freetube/.config/FreeTube/settings.db
 
-	cd ~/vd
+	cd ~/ss
 	a=$(git status | wc -l) > /dev/null
 	if [ $a -ne 4 ];then
 	       	wget -q --spider http://google.com > /dev/null

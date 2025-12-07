@@ -19,9 +19,9 @@ do
 sleep 2
 done
 
-  cd ~/vd 
+  cd ~/ss 
   exec foot sh -c  'git pull;
-  cd ~/vd/freetube/.config/FreeTube/;
+  cd ~/ss/freetube/.config/FreeTube/;
   rsync history.db  ~/.config/FreeTube/history.db;
   rsync playlists.db  ~/.config/FreeTube/playlists.db;
   rsync profiles.db  ~/.config/FreeTube/profiles.db;
