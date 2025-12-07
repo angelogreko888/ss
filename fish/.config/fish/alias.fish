@@ -148,3 +148,4 @@ alias ph='~/bin/phonebup.sh'
 
 alias dd='~/bin/dd.sh'
 
+alias ns='nano ~/.config/sway/config'

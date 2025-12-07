@@ -248,7 +248,7 @@ bindsym $mod+z exec librewolf
 
 
 
-exec waybar &
 exec nm-applet 
+exec waybar &
 exec foot &
 
