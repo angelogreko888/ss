@@ -19,10 +19,7 @@ export GDK_DPI_SCALE=1.6
 export WLR_DRM_DEVICES=/dev/dri/card0
 export WLR_DRM_NO_ATOMIC=1
 
-DISPLAY:= :0
-
-pgrep pipewire > /dev/null && pkill pipewire
-pipewire &
+#DISPLAY:= :0
 
 
 exec sway "$@"
