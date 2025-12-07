@@ -56,3 +56,4 @@ xdotool
 xf86-input-synaptics 
 xinit
 xtools
+sway
