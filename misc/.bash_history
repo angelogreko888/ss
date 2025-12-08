@@ -209,3 +209,60 @@ loginctl reboot
 nano .bashrc
 .local/bin/sd
 nano .local/bin/sd 
+cd vd
+cd vd/dwl
+sdsudo
+cd vd/0inst/
+bash 
+nano 2-xchroot.sh 
+sudo nano /etc/default/lib-locale
+sudo nano /etc/default/lib-locales
+sudo nano /etc/default/lib-localescd /etc/default/
+cd /etc/default/
+sudo nano libc-locales 
+sudo xbps-regenertae -fa
+sudo xbps-regenerte -fa
+cd ~/vd/0inst/
+n 2-xchroot.sh 
+nsno 2-xchroot.sh 
+sudo xbps-reconfigure -fa
+ssd
+../dwl
+n config.def.h
+sudo make install
+wlgreet
+sudo nano /etc/environment 
+reboot
+sudo reboot
+sudo nano /etc/default/grub
+upgrade-grub
+update-grub
+pdate-grub
+sudo pdate-grub
+sudo update-grub
+ss
+sudo nano /usr/ss
+sudo nano /usr/bin/ss
+cd .config/waybar
+nano config -l
+re
+cd ~/config/sway
+cd .config
+cd sway
+nano config 
+rm .profile 
+cd .config/sway
+sudo xbps-install elongid
+sudo xbps-query -Rs elongid
+sudo xbps-install elogind
+cd ss
+stow foot
+stow home
+stow mako
+cp -r ~/bvd/fish/ .
+stow fish/
+wget https://download.anydesk.com/linux/anydesk_*_amd64.deb
+wget https://download.anydesk.com/linux/anydesk_7*_amd64.deb
+exit
+nano ~/.config/sway/config 
+nano .config/sway/config 
