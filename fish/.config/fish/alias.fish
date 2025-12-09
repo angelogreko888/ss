@@ -148,4 +148,6 @@ alias ph='~/bin/phonebup.sh'
 
 alias dd='~/bin/dd.sh'
 
+alias mnd='sudo mount /dev/disk/by-label/shared-data /mnt/shared-data/'
+
 alias ns='nano ~/.config/sway/config'
