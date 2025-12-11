@@ -7,5 +7,8 @@ XBPS_ARCH=x86_64 xbps-install -S -r /mnt -R "$REPO" base-container linux linux-f
 xgenfstab -U /mnt > /mnt/etc/fstab
 cat /mnt/etc/fstab
 
+printf "\n\e[1;32m.....continue?....... \e[0m"
+read
+
 xchroot /mnt /bin/bash
 
