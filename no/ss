@@ -22,7 +22,7 @@ export WLR_DRM_NO_ATOMIC=1
 export XDG_DATA_DIRS="/usr/local/share:/usr/share:$XDG_DATA_DIRS"
 export XDG_CONFIG_DIRS="/etc/xdg:$XDG_CONFIG_DIRS"
 
-export NO_AT_BRIDGE=1
+#export NO_AT_BRIDGE=1
 
 
 
