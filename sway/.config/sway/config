@@ -386,8 +386,8 @@ bindsym $mod+Alt+o exec pkill wlsunset
 
 #pgrep pipewire > /dev/null && pkill pipewire
 exec pipewire &
+exec nm-tray &
 exec waybar &
 exec foot &
-exec nm-applet 
 
 exec autotiling -l 2
