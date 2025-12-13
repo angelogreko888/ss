@@ -266,3 +266,4 @@ wget https://download.anydesk.com/linux/anydesk_7*_amd64.deb
 exit
 nano ~/.config/sway/config 
 nano .config/sway/config 
+EE
