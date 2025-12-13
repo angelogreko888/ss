@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!bin/bash
 
 printf "\e[1;32m.......Enter Country.......: \n\e[0m"
 

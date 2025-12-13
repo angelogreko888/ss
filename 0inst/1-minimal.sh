@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!bin/bash
 
 mkdir -p /mnt/usr/db/xbps/keys
 cp /usr/db/xbps/keys/* /mnt/usr/db/xbps/keys

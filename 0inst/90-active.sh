@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 sudo ln -s /etc/sv/chronyd/ /var/service
 sudo ln -s /etc/sv/dbus/ /var/service

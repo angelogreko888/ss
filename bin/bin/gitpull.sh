@@ -28,7 +28,7 @@ done
   rsync search-history.db  ~/.config/FreeTube/search-history.db;
   rsync settings.db  ~/.config/FreeTube/settings.db;
   cd ~; 
-  echo upgrading..........;
-  sudo xbps-install -Suy
+#  echo upgrading..........;
+#  sudo xbps-install -Suy
   echo " Done!!!!!"
   read'
