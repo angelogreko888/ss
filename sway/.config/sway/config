@@ -391,4 +391,4 @@ exec waybar &
 exec foot &
 
 exec autotiling -l 2
-exec octoxbps-notifier &
+#exec octoxbps-notifier &
